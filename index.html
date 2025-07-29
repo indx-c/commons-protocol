@@ -1,63 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>INDX-C.IO</title>
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
         body {
             margin: 0;
-            font-family: 'Aldrich', sans-serif;
-            color: white;
-            text-align: center;
-            background: url('bg.jpg') no-repeat center center fixed;
+            padding: 0;
+            background-image: url('bg.jpg');
             background-size: cover;
+            background-position: center;
+            font-family: 'Aldrich', sans-serif;
+            color: #fff;
+            text-align: center;
         }
-        .logo {
-            margin-top: 60px;
+        .container {
+            position: relative;
+            top: 20%;
+            transform: translateY(20%);
         }
-        .logo img {
-            width: 200px;
-        }
-        .title {
-            font-size: 32px;
-            margin: 20px 0 10px 0;
-        }
-        .subtitle {
-            font-size: 18px;
+        img.logo {
+            width: 300px;
             margin-bottom: 30px;
         }
-        .button {
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0 20px 0;
+        }
+        a.button {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: #f1b600;
-            color: #000;
+            padding: 10px 20px;
+            background-color: #f1b300;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
             font-weight: bold;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
-        .email {
-            color: #f1b600;
+        a.email {
+            display: block;
+            margin-top: 10px;
+            color: #f1b300;
             text-decoration: none;
-            font-size: 16px;
         }
-        .footer {
-            margin-top: 60px;
-            font-size: 14px;
-            color: #ccc;
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            font-size: 0.8em;
         }
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="logo.png" alt="INDX-C.IO Logo">
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <h1>INDX-C.IO</h1>
+        <p>Commons Protocol – For a fair and inclusive digital art ecosystem</p>
+        <a href="https://github.com/indx-c/commons-protocol" class="button">View on GitHub</a>
+        <a href="mailto:info@indx-c.io" class="email">info@indx-c.io</a>
     </div>
-    <div class="title">INDX-C.IO</div>
-    <div class="subtitle">Commons Protocol – For a fair and inclusive digital art ecosystem</div>
-    <a class="button" href="https://github.com/indx-c/commons-protocol" target="_blank">View on GitHub</a><br>
-    <a class="email" href="mailto:info@indx-c.io">info@indx-c.io</a>
-    <div class="footer">© 2025 INDX-C.IO SB</div>
+    <footer>
+        &copy; 2025 INDX-C.IO SB
+    </footer>
 </body>
 </html>
