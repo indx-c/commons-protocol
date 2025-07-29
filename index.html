@@ -1,87 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>INDX-C.IO – Commons Protocol</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
   <style>
-   <div style="margin-top: 30px;">
-  <p>Contattaci: 
-    <a href="mailto:info@indx-c.io">info@indx-c.io</a> · 
-    <a href="https://www.indx-c.io" target="_blank">Sito Web</a> · 
-    <a href="https://twitter.com/indxcio" target="_blank">Twitter</a>
-  </p>
-</div> 
     body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: rgba(255, 255, 255, 0.75);
-      color: #222;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
       text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
     }
 
-    img.logo {
-      width: 360px;
-      margin-bottom: 20px;
-      animation: float 3s ease-in-out infinite;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    img {
+      max-width: 220px;
+      height: auto;
     }
 
     h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.5rem;
-      margin: 0;
-      color: #1a1a1a;
+      font-size: 2.8em;
+      margin-top: 20px;
+      font-weight: bold;
     }
 
     p {
-      font-size: 1.2rem;
-      margin: 10px 0 30px;
+      font-size: 1.2em;
+      margin: 10px 0 30px 0;
+      color: #333;
     }
 
-    a.button {
-      background-color: #ffb400;
-      color: white;
+    .button {
+      background-color: #ffc107;
+      border: none;
+      color: black;
       padding: 12px 24px;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    a.button:hover {
-      background-color: #e69900;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
     }
 
     footer {
-      position: absolute;
-      bottom: 15px;
-      font-size: 0.9rem;
-      color: #444;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
     }
 
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <img src="logo-indx-c-io.png" alt="INDX-C.IO Logo" class="logo" />
-  <h1>INDX-C.IO</h1>
-  <p>Commons Protocol – For a fair and inclusive digital art ecosystem</p>
-  <a class="button" href="https://github.com/indx-c/commons-protocol" target="_blank">View on GitHub</a>
-  <footer>© 2025 INDX-C.IO SB</footer>
+  <div class="container">
+    <img src="logo-indx.png" alt="INDX-C.IO Logo" />
+    <h1>INDX-C.IO</h1>
+    <p>Commons Protocol – For a fair and inclusive digital art ecosystem</p>
+    <a class="button" href="https://github.com/indx-c/commons-protocol" target="_blank">View on GitHub</a>
+
+    <div class="links">
+      <p>📧 <a href="mailto:info@indx-c.io">info@indx-c.io</a></p>
+    </div>
+
+    <footer>© 2025 INDX-C.IO SB</footer>
+  </div>
 </body>
 </html>
