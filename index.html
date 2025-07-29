@@ -18,23 +18,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
       text-align: center;
+      padding-top: 30px;
+      position: relative;
     }
-    .logo {
-  max-width: 400px;
-  margin-bottom: 10px; /* ↓ Ridotto da 30–40px */
-}
 
-h1 {
-  font-size: 3rem;
-  margin: 5px 0 8px 0; /* ↑ Avvicina il titolo al logo e al sottotitolo */
-}
-    p {
-      font-size: 1.3rem;
-      margin-bottom: 50px;
+    .logo {
+      max-width: 400px;
+      margin-bottom: 10px;
     }
+
+    h1 {
+      font-size: 3rem;
+      margin: 5px 0 8px 0;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      margin: 0 0 12px 0;
+    }
+
     .button {
       background-color: #fcd400;
       color: black;
@@ -44,21 +49,30 @@ h1 {
       font-size: 1rem;
       cursor: pointer;
       text-decoration: none;
+      margin-bottom: 12px;
     }
+
+    .email-link {
+      color: #fcd400;
+      text-decoration: none;
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
     footer {
       position: absolute;
-      bottom: 50px;
-      font-size: 0.9rem;
-      opacity: 0.8;
+      bottom: 15px;
+      font-size: 0.85rem;
+      opacity: 0.75;
     }
   </style>
 </head>
 <body>
   <img src="Logo_new_no_sfondo.png" alt="Logo INDX" class="logo"/>
   <h1>Commons Protocol</h1>
-  <p>For a fair and inclusive digital art ecosystem</p>
+  <p class="subtitle">For a fair and inclusive digital art ecosystem</p>
   <a class="button" href="https://github.com/indx-c/commons-protocol" target="_blank">View on GitHub</a>
-  <p><a href="mailto:info@indx-c.io" style="color: #fcd400; text-decoration: none;">📧 info@indx-c.io</a></p>
+  <p><a href="mailto:info@indx-c.io" class="email-link">📧 info@indx-c.io</a></p>
   <footer>© 2025 INDX-C.IO SB – All rights reserved.</footer>
 </body>
 </html>
