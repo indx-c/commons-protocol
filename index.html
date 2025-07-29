@@ -7,38 +7,38 @@
 
   <!-- Font Aldrich da Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
-{
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url('sfondo-onde.png') center center no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
+
   <style>
-   body {
-  margin: 0;
-  font-family: 'Aldrich', sans-serif;
-  color: white;
-  background: url('sfondo-onde.png') no-repeat center center;
-  background-attachment: scroll;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
-  text-align: center;
-  padding-top: 30px;
-  position: relative;
-}
+    body {
+      margin: 0;
+      font-family: 'Aldrich', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      padding-top: 30px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('sfondo-onde.png') center center no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
 
     .logo {
       max-width: 500px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     h1 {
