@@ -1,74 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>INDX-C.IO - Commons Protocol</title>
+    <meta charset="UTF-8">
+    <title>Commons Protocol – INDX-C.IO</title>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            padding: 0;
             font-family: 'Aldrich', sans-serif;
-            background-image: url('bg.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: #fff;
+            color: white;
             text-align: center;
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
-
-        header {
-            padding: 60px 20px 30px;
+        .container {
+            padding-top: 10vh;
         }
-
-        header img {
-            width: 240px;
+        img.logo {
+            width: 200px;
             height: auto;
+            margin-bottom: 30px;
         }
-
         h1 {
-            margin: 20px 0 10px;
-            font-size: 2.8em;
+            font-size: 3em;
+            margin: 0.2em 0;
         }
-
         p {
-            font-size: 1.3em;
-            margin: 10px auto;
-            max-width: 700px;
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 1em;
         }
-
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #facc15;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+        }
         footer {
             margin-top: 40px;
             font-size: 0.9em;
-            color: #ccc;
+            color: #bbb;
         }
-
-        a {
-            color: #ffd700;
+        .email {
+            margin-top: 10px;
+            color: #facc15;
             text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="INDX-C.IO Logo">
+    <div class="container">
+        <img src="logo.png" alt="INDX-C.IO Logo" class="logo">
         <h1>Commons Protocol</h1>
-        <p>
-            Un progetto open-source per la valorizzazione degli artisti digitali emergenti su blockchain. <br>
-            Sviluppato da <strong>INDX-C.IO Società Benefit</strong>.
-        </p>
-        <p>
-            <a href="mailto:info@indx-c.io">📩 info@indx-c.io</a> | 
-            <a href="https://github.com/indx-c/commons-protocol" target="_blank">🌐 GitHub Repository</a>
-        </p>
-    </header>
-    <footer>
-        &copy; 2025 INDX-C.IO SB - Tutti i diritti riservati.
-    </footer>
+        <p>An open-source protocol to enhance emerging digital artists via blockchain.</p>
+        <p><strong>Developed by INDX-C.IO Società Benefit.</strong></p>
+        <a class="button" href="https://github.com/indx-c/commons-protocol" target="_blank">GitHub Repository</a>
+        <a class="email" href="mailto:info@indx-c.io">info@indx-c.io</a>
+        <footer>
+            © 2025 INDX-C.IO SB – All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>
