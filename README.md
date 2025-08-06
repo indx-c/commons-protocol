@@ -11,6 +11,7 @@
 - 🎨 Supporta artisti emergenti e con disabilità
 - 🧩 Integra protocolli redistributivi e reputazionali
 
+👉 [Read our full Mission and Social Impact](./MISSION.md)
 ---
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=github)](https://indx-c.github.io/commons-protocol/)
